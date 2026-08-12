@@ -7,6 +7,7 @@ export const registerUser = async (
   res: Response
 ): Promise<void> => {
   try {
+    console.log(1)
     const {
       userName,
       userEmail,
@@ -18,7 +19,7 @@ export const registerUser = async (
     if (!userName || !userEmail || !userPassword || !userContact) {
       res.status(400).json({
         success: false,
-        message: "Name, email, password and contact are required",
+        message: "Please send all the required data.",
       });
       return;
     }

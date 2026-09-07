@@ -2,6 +2,7 @@ npm init -y
 npm i express
 npm install -D typescript@5.4.5 ts-node-dev @types/node @types/express
 npx tsc --init
+npm i dotenv
 npm install mongoose
 npm install -D @types/mongoose
 npm install bcrypt
